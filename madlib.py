@@ -1,0 +1,23 @@
+import random
+
+
+print("Hello There welcome to Madlib\n")
+print("Here You will input only the Verb and Adjective....\n")
+print("\n Enetr the choice \n1. Do You want to enter all the verb and adjective ?\n\
+2. Or you can just input few adjective and verb and comupter will select randomly  ")
+choice = input("Enter your Choice :")
+if choice == "1":
+  print("Enter any 20 adjective with space in a single line like: old tall skinny")
+  adj = list(input().split(" "))
+  print("Now in the similar fashion enter any 20 verb")
+  verb = list(input().split(" "))
+  print()
+  mat =f"Once upon a time, in a secluded village nestled within a lush green valley, lived a curious young girl named Lily. \nShe possessed a vivid imagination and a heart full of {adj[1]} passion. Lily's life was filled with routines and {adj[2]} predictability, \nbut deep within, she longed for {adj[3]} adventure.\nOne fateful morning, Lily {verb[1]} stumbled upon an ancient {adj[4]} map hidden within \nthe depths of her attic. The {adj[5]} mysterious parchment promised untold treasures and {verb[2]} enchanted lands beyond her wildest dreams. \nWith her heart racing, Lily {verb[3]} decided to embark on a thrilling {adj[6]} journey to uncover the secrets of the map.\nGuided by the \n{adj[7]} flickering light of a distant {verb[4]} star, Lily ventured into the unknown. She traversed treacherous mountains, {verb[5]} swam \nthrough raging rivers, and {verb[8]} trekked through dense jungles. Along the way, she encountered {adj[8]} eccentric characters, both \n{verb[7]} quirky and {verb[6]} wise, who {verb[5]} aided her in her quest.\nAs the days turned into weeks, Lily\'s determination grew stronger, \nand her spirit {adj[9]} soared with each new discovery. She braved {adj[10]} perilous traps, {verb[19]} outwitted cunning adversaries, and \n{verb[9]} unlocked ancient {adj[11]} riddles, all in pursuit of the promised treasures.\nHowever, the path to her desires was not without {adj[12]} \nchallenges. Lily faced {verb[10]} formidable obstacles that tested her courage and {adj[13]} resilience. Doubt began to creep into her mind, \nbut she {verb[11]} persevered, drawing strength from within.\nFinally, after a {adj[14]} grueling journey, Lily arrived at the destination \nmarked on the map. Before her eyes lay a magnificent, {verb[12]} shimmering portal. With a {verb[13]} final surge of determination, she \nstepped through the gateway, leaving behind the world she knew.\nOn the other side, Lily found herself in a realm of pure magic and {adj[15]} \nenchantment. There, she discovered treasures beyond measure and a sense of {adj[16]} fulfillment that surpassed her wildest imagination. The \njourney had transformed her, {verb[14]} empowering her to embrace the unknown and {adj[17]} seize her own destiny.\nReturning to her village, Lily shared her incredible tale, inspiring others to follow their own dreams and {verb[15]} embark on their unique adventures. Her story became a {adj[18]} legend, passed down through generations, reminding everyone that within each of us lies the power to {verb[16]} shape our own destiny and discover the {adj[19]} extraordinary within the ordinary.\nAnd so, Lily\'s quest became the stuff of {adj[19]} fairytales, forever reminding us that the world is brimming with {verb[17]} possibilities for those brave enough to {verb[18]} chase their dreams."
+  print(mat)
+elif choice == "2":
+  print("Enter few verb of ur choice (verb with space between them) :")
+  verb = list(input().split(" "))
+  print("Enter few adjective of ur choice (verb with space between them) :")
+  adj = list(input().split(" "))
+  mat = f"\n\nIn a quaint café, amidst the aroma of freshly brewed coffee, an old man sat alone. His eyes glistened with {random.choice(adj)} nostalgia as he leafed \nthrough a {random.choice(verb)} photo album. Each picture held a {random.choice(adj)} cherished memory, a {random.choice(verb)} \nfragment of a love story that spanned decades. His smile faded momentarily, lost in a sea of {random.choice(adj)} bittersweet \nrecollections. But then, a {random.choice(adj)} gentle tap on his shoulder. There she stood, his lifelong companion, her eyes mirroring \nhis own. No {random.choice(verb)} words were needed as they held hands, silently conveying a {random.choice(adj)} lifetime of devotion. In that moment, \nthe café became a {random.choice(adj)} sanctuary of love, a {random.choice(verb)} testament to their enduring bond."
+  print(mat)
