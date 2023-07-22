@@ -12,7 +12,7 @@ def rps(ch2):
   if (ch1=="r" and ch2=="p") or (ch1=="p" and ch2=="s") or (ch1=="s" and ch2=="r"):
     print("You Win !!!")
   elif (ch1==ch2):
-    print("draw")
+    print("It is a tie")
   else:
     print("Computer Won....")
 
